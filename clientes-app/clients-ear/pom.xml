@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>clients-ear</artifactId>
+	<version>${project.parent.version}</version>
+
+	<parent>
+		<groupId>mx.com.cetech</groupId>
+		<artifactId>clients-app</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<packaging>ear</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-persistence</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-web</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-ws</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-rest</artifactId>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+	
+	<build>
+    <resources>
+        <resource>
+            <filtering>true</filtering>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+            </includes>
+            <directory>src/main/application</directory>
+        </resource>
+    </resources>
+</build>
+
+</project>
