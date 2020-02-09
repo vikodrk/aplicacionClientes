@@ -7,17 +7,17 @@
 
 	<parent>
 		<groupId>mx.com.cetech</groupId>
-	<artifactId>clients-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+		<artifactId>clients-app</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<packaging>jar</packaging>
 
-		<dependencies>
-			<dependency>
-				<groupId>mx.com.cetech</groupId>
-				<artifactId>clients-commons</artifactId>
-			</dependency>
-		</dependencies>
-		
+	<dependencies>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-commons</artifactId>
+		</dependency>
+	</dependencies>
+
 </project>

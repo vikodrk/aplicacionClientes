@@ -6,7 +6,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.ejb.EJB;
-import javax.ejb.Remote;
+import javax.ejb.Local;
 import javax.ejb.Stateless;
 
 import mx.com.cetech.clientes.model.Clients;
@@ -15,7 +15,7 @@ import mx.com.cetech.clients.persistence.dao.IClientsDAO;
 import mx.com.cetech.services.IClientServiceEJB;
 import mx.com.cetech.services.mappers.ClientMapper;
 
-@Remote(IClientServiceEJB.class)
+@Local(IClientServiceEJB.class)
 @Stateless
 public class ClientServiceImpl implements IClientServiceEJB {
 
