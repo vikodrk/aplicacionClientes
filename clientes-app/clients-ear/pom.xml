@@ -20,6 +20,10 @@
 		</dependency>
 		<dependency>
 			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
 			<artifactId>clients-persistence</artifactId>
 		</dependency>
 		<dependency>

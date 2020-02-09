@@ -4,6 +4,9 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd"
 	version="5">
 	<module>
+		<java>clients-model-0.0.1-SNAPSHOT.jar</java>
+	</module>
+	<module>
 		<java>clients-commons-0.0.1-SNAPSHOT.jar</java>
 	</module>
 	<module>

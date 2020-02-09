@@ -16,8 +16,17 @@
 	<dependencies>
 		<dependency>
 			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-model</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
 			<artifactId>clients-persistence</artifactId>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.cetech</groupId>
+			<artifactId>clients-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javax</groupId>
