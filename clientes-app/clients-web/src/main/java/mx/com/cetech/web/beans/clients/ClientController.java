@@ -3,15 +3,15 @@ package mx.com.cetech.web.beans.clients;
 import java.io.Serializable;
 
 import javax.ejb.EJB;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
+import javax.inject.Named;
 
 import lombok.Getter;
 import lombok.Setter;
 import mx.com.cetech.clients.commons.to.ClientsTO;
 import mx.com.cetech.services.IClientServiceEJB;
 
-@ManagedBean(name = "clientsMb")
+@Named("clientsMb")
 @ViewScoped
 @Getter
 @Setter
